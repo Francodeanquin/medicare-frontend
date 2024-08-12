@@ -17,7 +17,7 @@ const Doctors = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setDebounceQuery(Query);
+      setDebounceQuery(query);
     }, 700);
     return () => clearTimeout(timeout);
   }, []);
